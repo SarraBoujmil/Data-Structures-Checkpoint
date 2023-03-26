@@ -7,9 +7,9 @@ VAR
 BEGIN
     
 tab2:={2,4,1,9,3};
-FOR i FROM 0 TO tab1.length STEP 1  DO
+FOR i FROM 0 TO tab1.length-1 STEP 1  DO
     existe:=false;
-    FOR j FROM 0 TO tab2.length STEP 1  DO
+    FOR j FROM 0 TO tab2.length-1 STEP 1  DO
        IF (tab1[i]=tab2[j]) THEN
         existe:=true;
        END_IF
